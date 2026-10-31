@@ -1,0 +1,140 @@
+html[theme='light'] {
+    --iv: 1;
+}
+
+html[theme='dark'] {
+    --iv: 0;
+}
+
+#video_content {
+    padding: 7vw;
+
+    h1 {
+        border-bottom: 5px solid var(--blue);
+        width: fit-content;
+        user-select: none;
+        color: var(--blue);
+    }
+}
+
+#videos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto 1fr auto;
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+@keyframes flash {
+    0% {
+        background-color: #505050;
+    }
+    50% {
+        background-color: #323232;
+    }
+    100% {
+        background-color: #505050;
+    }
+}
+
+.video_cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 5px;
+    box-sizing: border-box;
+
+    .img_bg {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        user-select: none;
+        aspect-ratio: 16/9;
+        margin-bottom: 5px;
+        background-color: #505050;
+        animation: flash .3s infinite;
+        border: 1px solid var(--text-color-second);
+        mix-blend-mode: difference;
+        filter: invert(var(--iv));
+        transition: filter .3s;
+
+        .cover {
+            width: 100%;
+            object-fit: cover;
+            transition: opacity .3s;
+        }
+    }
+
+    .title {
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: color .3s cubic-bezier(0.00, 0.37, 0.61, 0.99);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .date {
+        font-size: 12px;
+        color: var(--text-color-second);
+        transition: color .3s cubic-bezier(0.00, 0.37, 0.61, 0.99);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--blue);
+        z-index: -1;
+        transition: width .3s cubic-bezier(0.00, 0.37, 0.61, 0.99);
+    }
+
+    &:hover {
+        .img_bg {
+            filter: invert(1);
+        }
+
+        &::before {
+            width: 100%;
+        }
+
+        .title, .date {
+            color: #f3ff08;
+        }
+    }
+}
+
+@keyframes fade_down {
+    0% {
+        opacity: 0;
+        transform: translateY(-5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade_up {
+    0% {
+        opacity: 0;
+        transform: translateY(10vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

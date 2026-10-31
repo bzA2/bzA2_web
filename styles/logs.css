@@ -1,0 +1,53 @@
+#log_page {
+    padding: 7vw;
+}
+
+#log_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+    .log_head {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        border-bottom: 4px solid var(--blue);
+        user-select: none;
+        color: var(--blue);
+    }
+}
+
+
+.logs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .log_date {
+        color: var(--blue);
+        letter-spacing: 1px;
+        user-select: none;
+        margin-bottom: 5px;
+        border: 1px solid var(--blue);
+        width: fit-content;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+
+    .log_content {
+        font-size: 17px;
+        letter-spacing: 3px;
+        flex: 1;
+    }
+
+    @media screen and (max-width: 800px) {
+        .log_date {
+            font-size: 15px;
+        }
+
+        .log_content {
+            font-size: 15px;
+        }
+    }
+}

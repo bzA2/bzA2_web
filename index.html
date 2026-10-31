@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="毕泽A2的个人网站">
+    <meta name="author" content="bzA2">
+    <meta name="keywords" content="毕泽A2, bzA2, 壳拓泷, Kotoron, 个人网站">
+    <title>毕泽A2 | \(z_Z)/</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/jetbrains-mono@5.3.0/index.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-sans-sc-vf@1.0.10/font.min.css">
+    <script defer src="/scripts/home.js" type="module"></script>
+    <script defer src="/scripts/theme.js" type="module"></script>
+</head>
+<body>
+    <noscript>
+        <span class="nojs">请您启用JavaScript以访问本站</span>
+    </noscript>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink=http://www.w3.org/1999/xlink style="display: none">
+        <symbol id="bilibili" viewBox="0 0 24 24">
+            <path clip-rule="evenodd" fill="currentColor" d="M4.977 3.561a1.31 1.31 0 111.818-1.884l2.828 2.728c.08.078.149.163.205.254h4.277a1.32 1.32 0 01.205-.254l2.828-2.728a1.31 1.31 0 011.818 1.884L17.82 4.66h.848A5.333 5.333 0 0124 9.992v7.34a5.333 5.333 0 01-5.333 5.334H5.333A5.333 5.333 0 010 17.333V9.992a5.333 5.333 0 015.333-5.333h.781L4.977 3.56zm.356 3.67a2.667 2.667 0 00-2.666 2.667v7.529a2.667 2.667 0 002.666 2.666h13.334a2.667 2.667 0 002.666-2.666v-7.53a2.667 2.667 0 00-2.666-2.666H5.333zm1.334 5.192a1.333 1.333 0 112.666 0v1.192a1.333 1.333 0 11-2.666 0v-1.192zM16 11.09c-.736 0-1.333.597-1.333 1.333v1.192a1.333 1.333 0 102.666 0v-1.192c0-.736-.597-1.333-1.333-1.333z"></path>
+        </symbol>
+        <symbol id="lofter" viewBox="0 0 50 50">
+            <circle cx="24" cy="24" r="20" fill="transparent" stroke="currentColor" stroke-width="3" /><path d="M21.5 28.5V13c0-2.5-4.5-5-4.5-2v17c0 3.078 2.5 4.5 5 4.5h7c3.734 0 5.344 4.5 3 4.5h-6.5c-2 0-3-1.5-3-1.5" stroke="currentColor" fill="transparent" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+    </svg>
+    <button id="themebtn" class="icon homebt">
+        <span class="mdi mdi-brightness-6"></span>
+    </button>
+    <div id="loading">
+        <span id="loading_txt">\(z_Z)/</span>
+    </div>
+    <div id="home_background">
+        <div id="grid_bg"></div>
+    </div>
+    <div id="home" style="display: none;">
+        <div id="home_middleground">
+            <div id="mid_block"></div>
+        </div>
+        <div class="greeting">
+            <h1 class="zz_greet">\(z_Z)/</h1>
+            <h1 class="hello_greet">
+                Welcome To 
+                <br><span class="names_typed"></span>'s Website.
+            </h1>
+            <div class="types_names">
+                <span>bzA2</span>
+                <span>毕泽A2</span>
+                <span>Kotoron</span>
+                <span>壳拓泷</span>
+            </div>
+            <div class="platforms">
+                <span class="soc_txt">MY SOCIAL MEDIA: </span>
+                <a href="https://space.bilibili.com/3546668689525310">
+                    <button class="pbtn">
+                        <svg viewbox="0 0 24 24">
+                            <use xlink:href="#bilibili"></use>
+                        </svg>
+                    </button>
+                </a>
+                <a href="https://bza2-kotoron.lofter.com">
+                    <button class="pbtn">
+                        <svg viewbox="0 0 24 24">
+                            <use xlink:href="#lofter"></use>
+                        </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="entries_container">
+            <div class="ent_block"></div>
+            <div class="entries">
+                <a href="/about">
+                    <button class="entry"><span>关于我</span></button>
+                </a>
+                <a href="https://www.bilibili.com/opus/1238886022405685285">
+                    <button class="entry"><span>我的OC</span></button>
+                </a>
+                <a href="/video">
+                    <button class="entry"><span>视频（作品）</span></button>
+                </a>
+                <a href="/log">
+                    <button class="entry"><span>网站公告/日志</span></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

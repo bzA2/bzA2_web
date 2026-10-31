@@ -1,0 +1,85 @@
+html[theme='light'] {
+    --spot: rgba(0, 0, 0, 0.4);
+    --mg: #b3b3b3;
+}
+
+html[theme='dark'] {
+    --spot: rgba(255, 255, 255, 0.4);
+    --mg: #484848;
+}
+
+#intro_area {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+
+    .ititle_container {
+        width: 100%;
+
+        .ititle {
+            font-weight: bolder;
+            width: fit-content;
+            border-bottom: 5px solid ;
+            user-select: none;
+            color: var(--blue);
+        }
+    }
+
+    .personal_info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        .nickname {
+            font-size: 48px;
+            font-weight: bolder;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+
+            .alia {
+                color: var(--text-color-third);
+                font-size: 32px;
+                flex: 1;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .nickname {
+                font-size: 38px;
+
+                .alia {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .intro_content {
+        margin-top: 40px;        
+
+        h2 {
+            position: relative;
+            width: fit-content;
+            margin-block-end: 3px;
+            color: var(--background-color);
+            background-image: linear-gradient(to right, var(--text-color-third), var(--mg));
+            padding: 5px;
+            user-select: none;
+            font-weight: 500;
+        }
+
+        .content, a {
+            margin-block-start: 20px;
+            margin-block-end: 20px;
+            letter-spacing: 3px;
+            font-size: 15px;
+        }
+
+        a {
+            color: var(--blue);
+        }
+    }
+}
