@@ -31,6 +31,10 @@
     color: #f3ff08;
 }
 
+* {
+    cursor: url("/assets/cursors/normal.png"), default;
+}
+
 noscript {
     position: fixed;
     width: 100%;
