@@ -13,6 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/jetbrains-mono@5.3.0/index.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-sans-sc-vf@1.0.10/font.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+    <script src="/scripts/log.js" type="module" defer></script>
+    <script src="/scripts/theme.js" type="module" defer></script>
+    <script src="/scripts/menu.js" defer></script>
 </head>
 <body>
     <noscript>
@@ -27,6 +31,7 @@
     <div id="loading">
         <span id="loading_txt">\(z_Z)/</span>
     </div>
+    <div id="menu_bg" style="display: none;"></div>
     <div id="menu_list" style="display: none;">
         <div id="menu_list_container">
             <a href="/">首页</a>
@@ -48,7 +53,4 @@
         </div>
     </div>
 </body>
-<script src="/scripts/log.js" type="module"></script>
-<script src="/scripts/theme.js" type="module"></script>
-<script src="/scripts/menu.js"></script>
 </html>

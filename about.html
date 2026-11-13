@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/intro.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource-variable/jetbrains-mono@5.3.0/index.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-source-han-sans-sc-vf@1.0.10/font.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
     <script defer src="/scripts/theme.js" type="module"></script>
     <script defer src="/scripts/menu.js"></script>
     <script defer src="/scripts/about.js"></script>
@@ -24,6 +25,7 @@
     <div id="loading">
         <span id="loading_txt">\(z_Z)/</span>
     </div>
+    <div id="menu_bg" style="display: none;"></div>
     <div id="menu_list" style="display: none;">
         <div id="menu_list_container">
             <a href="/">首页</a>
@@ -66,7 +68,7 @@
             <p class="content">画世界Pro（绘画工作）</p>
             <p class="content">Adobe After Effects（动画、视频等）</p>
         </div>
-        <div class="intro_content">
+        <div class="intro_content" id="sm">
             <h2>社交平台</h2>
             <p class="content"><a href="https://space.bilibili.com/3546668689525310">哔哩哔哩</a></p>
             <p class="content"><a href="https://bza2-kotoron.lofter.com">老福特（不常在线）</a></p>
@@ -75,6 +77,17 @@
             <p class="content">邮箱：<a href="mailto:bzA2_ktr@qq.com">bzA2_ktr@qq.com</a></p>
         </div>
         <br>
+        <div class="terms">
+            <span class="tt">内容使用条款</span>
+            <ul class="tu">
+                <li class="ti">凡是以任何形式搬运我的作品的（包括搬运到其他平台，或在你的网站中引用），都必须要经过我的授权，你可以在<a href="#sm">本页的社交平台板块</a>中找到并联系我以获得授权。若您未经过我的授权私自搬运了我的作品，我会要求您尽快下架相关视频。</li>
+                <li class="ti">我的作品即使能搬运，但请勿作为商业用途（尤其是倒卖），一旦发现我会零容忍处理。</li>
+                <li class="ti">使用我的公用免费素材时，您只需标注素材原作者（我），无需得到授权。请注意共用免费素材不可用于商用（如倒卖），一旦发现我将会举报。</li>
+                <li class="ti">你可以对我的OC进行同人创作，并且我本人也特别鼓励这种创作，但请勿对我的OC设定进行改编（如私设、半改，尤其是半改）。</li>
+                <li class="ti">严禁将我视频里的内容截图后抠图并在您的视频中使用，我会在发现后在平台举报您的视频（或私自联系您）。</li>
+                <li class="ti">我的作品可以作为您的作品的参考，严禁过度参考、抄袭我的作品。</li>
+            </ul>
+        </div>
     </div>
 </body>
 <script type="module">
